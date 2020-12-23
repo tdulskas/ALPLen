@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>ALPLen</RootNamespace>
+    <AssemblyName>ALPLen</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IMG\2D_Scheme_v2_1.JPG" />
+    <None Remove="IMG\2D_Scheme_v2_2.JPG" />
+    <None Remove="IMG\2D_Scheme_v2_3.JPG" />
+    <None Remove="IMG\app_icon_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="IMG\2D_Scheme_v2_1.JPG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="IMG\2D_Scheme_v2_2.JPG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="IMG\2D_Scheme_v2_3.JPG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="IMG\app_icon_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="PrInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="PrInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,90 @@
+﻿<Window x:Class="ALPLen.AddGroundLayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ALPLen"
+        mc:Ignorable="d"
+        Title="AddGroundLayer" Height="Auto" Width="300" SizeToContent="Height" WindowStartupLocation="CenterOwner">   
+    <Grid>
+        <StackPanel HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Id" HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="1" x:Name="Add_par4" Text="" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Name" HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="1" x:Name="Add_name" Text="" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Comment" HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="1" x:Name="Add_comment" Text="" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center">
+                            q<Run BaselineAlignment="Subscript" FontSize="10">c,k</Run>
+                        </TextBlock>
+                    </Label>
+                    <TextBox Grid.Column="1" x:Name="Add_par1" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Grid.Column="2" Content="MPa"/> 
+                </Grid>                
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center">
+                            &#x3B1;<Run BaselineAlignment="Subscript" FontSize="10">s</Run>
+                        </TextBlock>
+                    </Label>
+                    <TextBox Grid.Column="1" x:Name="Add_par2" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Height" HorizontalAlignment="Center"/>
+                    <TextBox Grid.Column="1" x:Name="Add_par3" MinWidth="40" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Grid.Column="2" Content="m"/>
+                </Grid>
+            </StackPanel>            
+            <UniformGrid Rows="1" Margin="0 10 0 0">
+                <Button x:Name="AddGL_submit" Content="Submit" Click="AddGL_submit_Click"/>
+                <Button x:Name="AddGL_cancel" Content="Cancel" IsCancel="True" Click="AddGL_cancel_Click"/>
+            </UniformGrid>            
+        </StackPanel>
+    </Grid>
+</Window>
