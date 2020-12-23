@@ -1015,7 +1015,7 @@ namespace ALPLen
 
         private void MenuItem_VDoc_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/");
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/tdulskas/ALPLen/blob/master/README.md");
         }
     }
 }
