@@ -7,7 +7,7 @@ A stand-alone Windows Presentation Foundation (WPF) application that calculates 
 ### Source code
 Written in C# and XAML. Target framework: .NET Core 3.1. Due to small scope and complexity of the application its architecture does not strictly follows any particular design pattern, yet to some extent ideas from traditional WPF design patern Model-View-ViewModel (MVVM) were borrowed and implemented. Whole source code is provided in this repository.
 ### Installation
-At this stage (v1.0) the project executable (.exe) file is compiled and provided via this repository. To start using this application all is needed is to download ALPLen.exe file and run it on your system. ALPLen v1.0 only uses internal resources of its source code. It does not require internet connection - works offline.
+At this stage (v1.0) the project executable (.exe) file and all other required files are compiled and provided via this repository. To start using this application all is needed is to download ALPLen_v1.0.rar file, extract it to your preferred location in your storage, and run ALPLen.exe file on your system. ALPLen v1.0 only uses internal resources of its source code. It does not require internet connection - works offline.
 ### Usage
 The program is intended for professional usage, yet it is not complicated and follows very simple structure to achieve desired results. Nonetheless, it is assumed that users have basic knowledge of the pile design approach mentioned in the description and will be able to find all additional data and information if needed on his own.
 
